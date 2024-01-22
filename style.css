@@ -1,0 +1,156 @@
+.navbar{
+    align-items: start;
+    background-color:rgba(9, 0, 0, 0.887);
+}
+
+.navbar-toggler{
+    color: rgb(243 242 242 / 97%);
+    background-color: #ffc70a;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-link:hover{
+    background-color: rgb(3, 75, 255);
+    opacity: 0.8;
+    color: yellow;
+}
+
+/* Header */
+#header{
+    background-image: url("public/images/header/campus.webp");
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    color: aliceblue;
+}
+#ec-intro {
+    background-color: rgba(46, 110, 247, 0.687);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Skills */
+#section2{
+    background-color: rgb(240, 248, 255);
+    height: 500px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.progressbar {
+    margin-top: 20px;
+}
+
+/* Experience */
+#section3{
+    background-color:rgb(19, 13, 13);
+    height: 600px;
+    width: 100%;
+    color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#job-border{
+    border: #ffc70a double 5px;
+}
+
+.job-border-bottom{
+    border-bottom: #ffc70a double 5px;
+}
+
+.job-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.job-logo, .job-title, .job-date{
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}
+
+/* Education */
+#section4{
+    background-color: rgb(170, 211, 247);
+    height: 600px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.education-container > .column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.red{
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+
+/* Portfolio */
+#section5{
+    background-color: rgb(19, 13, 13);
+    height: 800px;
+    width: 100%;
+    color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Contact */
+#section6{
+    background-color: rgb(165, 247, 168);
+    height: 600px;
+    width: 100%;
+}
+.project-container{
+    gap: 50px;
+    justify-content: center;
+}
+
+@media (min-width: 1200px){
+    .job-container{
+        display: inline-grid;
+        grid-template-columns: 1fr 2.5fr 1.5fr;   
+    }
+
+    .education-container {
+        display: inline-grid;
+        grid-template-columns:auto auto;
+    }
+
+    #section5, #section6{
+        height: auto;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    #section2, #section3, #section4, #section5, #section6{
+        height: auto;
+    }
+
+    /* .project-container {
+        justify-content: center;
+    } */
+    
+}
+
+@media (max-width: 767px) {
+    h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #section2, #section3, #section4, #section5, #section6{
+        height: auto;
+    }
+}
